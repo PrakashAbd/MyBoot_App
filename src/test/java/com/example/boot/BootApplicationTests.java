@@ -13,20 +13,5 @@ import com.example.entity.Login;
 @SpringBootTest
 public class BootApplicationTests 
 {
-	Login log = new Login();
-	@Before
-	public void check()
-	{
-		log.setUsername("dinesh");
-		log.setPassword("dinesh123");
-	}
-
-	@Test
-	public void contextLoads() 
-	{
-		EmployeeDaoImpl edl = Config.getEmployeeDao();
-		System.out.println(edl.displayById("M1049212").getUsername()+" "+log.getUsername());
-		assertEquals(log.getUsername(),edl.displayById("M1049212").getUsername());
 	
-	}
 }
