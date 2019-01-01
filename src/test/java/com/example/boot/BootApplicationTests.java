@@ -13,5 +13,8 @@ import com.example.entity.Login;
 @SpringBootTest
 public class BootApplicationTests 
 {
-	
+	@Test
+	public void contextLoads() {
+	}
+
 }
